@@ -24,5 +24,7 @@ public class Main
         jc.println("Mult = " + mult);
  
         //feature update 1
+        
+        //feature update 2
     }
 }
