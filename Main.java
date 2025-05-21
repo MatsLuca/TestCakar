@@ -5,17 +5,23 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
+import java.math.*;
+import tools.*;
+
 public class Main
 {
     public static void main(String args[]){
+        JConsole jc = new JConsole();
+        
         int obereGrenze = 100;
-        int mult = 1;
+        BigInteger mult = new BigInteger("1");
         
         for(int i = 1; 1 <= obereGrenze; ++i){
-            mult *= i;
+            String param = String.valueOf(i);
+            mult = mult.multiply(new BigInteger(param));
         }
         
-        System.out.println("Mult = " + mult);
+        jc.println("Mult = " + mult);
         
     }
 }
