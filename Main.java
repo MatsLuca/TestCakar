@@ -22,6 +22,6 @@ public class Main
         }
         
         jc.println("Mult = " + mult);
-        
+ 
     }
 }
